@@ -1,0 +1,66 @@
+{
+	"name": "popupShare",
+	"version": "0.0.1",
+	"author": [
+		""
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:popupShare",
+	"descriptionmsg": "popupshare-desc",
+	"license-name": "MIT",
+	"type": "other",
+	"AutoloadClasses": {
+        "popupShare": "popupShare.class.php",
+		"popupShareHooks": "popupShare.hooks.php",
+		"SpecialpopupShare": "specials/SpecialpopupShare.php"
+	},
+	"config": {
+		"popupShareEnableFoo": true
+	},
+	"callback": "popupShareHooks::onExtensionLoad",
+	"ExtensionMessagesFiles": {
+		"popupShareAlias": "popupShare.i18n.alias.php",
+		"popupShareMagic": "popupShare.i18n.magic.php"
+	},
+	"Hooks": {
+		"NameOfHook": [
+			"popupShareHooks::onNameOfHook"
+		],
+		"ParserFirstCallInit": [
+			"popupShareHooks::onParserFirstCallInit"
+		]
+	},
+	"MessagesDirs": {
+		"popupShare": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"ext.popupshare.foo": {
+			"scripts": [
+				"modules/ext.popupShare.js"
+			],
+			"styles": [
+				"modules/ext.popupShare.foo.css"
+			],
+			"dependencies": [
+				"ext.popupshare.kit"
+			]
+		},
+		"ext.popupshare.kit": {
+			"scripts": [
+				"modules/js/social-share-kit.min.js"
+			],
+			"styles": [
+				"modules/css/social-share-kit.css"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "popupShare"
+	},
+	"SpecialPages": {
+		"popupShare": "SpecialpopupShare"
+	},
+	"manifest_version": 1
+}

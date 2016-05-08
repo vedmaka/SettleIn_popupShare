@@ -1,0 +1,20 @@
+.mw-popupshare-foo {
+    float: left;
+}
+
+#popupsharewindow {
+    display: none;
+    height: 95px;
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.23);;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 10000;
+}
+#popupsharewindow a.popup-closer {
+    margin: 5px 0 0 0;
+    display: block;
+}

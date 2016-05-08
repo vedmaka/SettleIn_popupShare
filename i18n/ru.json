@@ -1,0 +1,11 @@
+{
+  "@metadata": {
+    "authors": [
+      ""
+    ]
+  },
+  "popupshare-desc": "Extension for SettleIn skin provides sharing functionality",
+  "popupshare-i18n-welcome": "Welcome to the localization file of the popupShare extension.",
+  "popupshare-action-cancel": "Отменить",
+  "popupshare-action-share": "Поделиться"
+}
