@@ -1,6 +1,9 @@
 $(function(){
 
-    var selector = "#popupsharebtn";
+	console.log('Sharing kit initiated.');
+	SocialShareKit.init();
+
+    /*var selector = "#popupsharebtn";
     var popup = "#popupsharewindow";
     if( $(selector).length ) {
         SocialShareKit.init();
@@ -20,6 +23,6 @@ $(function(){
         $(popup).find('a.popup-closer').click(function(){
             $(popup).removeClass('popup-active').fadeOut("fast");
         });
-    }
+    }*/
 
 });

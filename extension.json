@@ -48,7 +48,7 @@
 		},
 		"ext.popupshare.kit": {
 			"scripts": [
-				"modules/js/social-share-kit.min.js"
+				"modules/js/social-share-kit.js"
 			],
 			"styles": [
 				"modules/css/social-share-kit.css"

@@ -10,7 +10,7 @@ var SocialShareKit = (function () {
 
     function init(opts) {
         options = opts || {};
-        supportsShare = /(twitter|facebook|google-plus|pinterest|tumblr|vk|linkedin|email)/;
+        supportsShare = /(twitter|facebook|google-plus|pinterest|tumblr|vk|linkedin|email|stumbleupon)/;
         ready(function () {
             els = $(options.selector || '.ssk');
             if (!els.length)
@@ -166,6 +166,9 @@ var SocialShareKit = (function () {
             case 'email':
                 url = 'mailto:?subject=' + encodeURIComponent(title) +
                 '&body=' + encodeURIComponent(title + '\n' + shareUrl + '\n\n' + text + '\n');
+                break;
+            case 'stumbleupon':
+                url = 'http://www.stumbleupon.com/badge/?url=' + shareUrlEnc;
                 break;
         }
         return url;
